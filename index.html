@@ -1,478 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="theme-color" content="#BC8887" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Undangan Pernikahan [Nama CPW] & [Nama CPP]</title>
+<html lang="tk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toý Çakylygy - Kerim & Jahan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <meta property="og:title" content="Undangan Pernikahan Nama CPW & Nama CPW - Hari, 21 April 2021">
-    <meta property="og:description" content="Undangan Pernikahan Nama CPW & Nama CPW - Sabtu, 21 April 2021 di [Nama Tempat], [Nama Kota]">
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:image" content="https://simple-wedding-invitation.dae.ng/image/samantha-gades-x40Q9jrEVT0-unsplash.jpg">
-    <meta property="og:url" content="http://simple-wedding-invitation.dae.ng/index.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <!-- Bulma Version 0.8.x-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.coundown.js"></script>
-    <link rel="icon" type="image/png" href="image/favicon.png" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
-    <!-- Begin Script for Countdown -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        body {
+            background-color: #bfa89e;
+            color: #ffffff;
+            text-align: center;
+        }
 
-      gtag('config', 'UA-23064379-20');
-    </script>
-    <!-- Begin Script for Countdown -->
+        /* Hero Section (1-nji sahypa) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 20px 40px 20px;
+            background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15));
+        }
 
-    <!-- Github Button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+        .title {
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 300;
+            opacity: 0.9;
+        }
 
-  <body>
-    <!-- Begin Preloader -->
-    <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
-      </div>
-    </div>
-    <!-- End Preloader-->
-    <!-- Begin Header -->
-    <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
-                </a>
-              </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-pasangan">
-                  Tentang CPW dan CPP
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Nama Wanita & Nama Pria</h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 21 April 2021 
-                </br>
-                [Nama Tempat], [Nama Area]
-                </br>
-                [Nama Kota]
-              
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '03/21/2020 17:00:00';
+        .couple-names {
+            font-family: 'Georgia', cursive, serif;
+            font-size: 3.2rem;
+            font-weight: normal;
+            line-height: 1.2;
+            margin: 20px 0;
+        }
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">Waktu</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Lokasi</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-pasangan">Tentang CPW & CPP</a>
-                  </li>
+        .date-location {
+            margin-bottom: 20px;
+        }
 
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
-    </div>
-    <!-- End Header -->
+        .wedding-date {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
 
-    <!-- Begin Main Content -->
-    <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        .wedding-venue {
+            font-size: 1rem;
+            opacity: 0.85;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 25px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+        }
+
+        .time-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .time-value {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .time-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* Beýleki bölümler */
+        .content-section {
+            background-color: #ffffff;
+            color: #4a4a4a;
+            padding: 50px 20px;
+        }
+
+        .bismillah {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #8c6d62;
+        }
+
+        .invitation-text {
+            line-height: 1.8;
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1-NJI SAHYPA -->
+    <section class="hero">
+        <div class="title">Toý Çakylygy</div>
         
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        <div class="couple-names">
+            Kerim<br>&<br>Jahan
         </div>
 
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
-          <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
-        </p>
-
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Nama Calon Mempelai Wanita
-          </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-          Nama Calon Mempelai Pria
-          </div>
-           
+        <div class="date-location">
+            <div class="wedding-date">17-nji oktýabr 2026</div>
+            <div class="wedding-venue">Toý Mekany | Aşgabat ş.</div>
         </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
 
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">21</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Maret 2020</div>
-              </p>
-            
+        <!-- YZA SANAMALY WAGT (COUNTDOWN) -->
+        <div class="countdown-container">
+            <div class="time-box">
+                <span id="days" class="time-value">00</span>
+                <span class="time-label">Gün</span>
             </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
-                <br>
-                <strong>17.00 WIB</strong>
-              </p>
-            
+            <span>:</span>
+            <div class="time-box">
+                <span id="hours" class="time-value">00</span>
+                <span class="time-label">Sagat</span>
             </div>
-
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                Resepsi:
-                <br>
-                <strong>19.00  - 21.00 WIB</strong>
-              </h1>
-              
-              
+            <span>:</span>
+            <div class="time-box">
+                <span id="minutes" class="time-value">00</span>
+                <span class="time-label">Min</span>
             </div>
-
-          </div>
-        </div>
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/event?action=TEMPLATE..." target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Google Calendar
-          </a>
-        </div>
-      </section>
-      <!-- End Waktu Content -->
-
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Nama Tempat</strong>
-              <br>
-              Jl. Alamat Lengkap No.9, RT.001/RW.006A,  
-              <br>
-              Kecamatan XXX, Kota XXX, Provinsi XXX
-              <br>
-            </p>
-          </div>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.google.com/maps?ll=-6.246855,106.971346&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=RM.%20Pondok%20Kenanga%20Jl.%20Kenanga%20Raya%20No.9%20RT.001%2FRW.006A%2C%20Jakasampurna%20Bekasi%20Barat%2C%20Bekasi%20City%2C%20West%20Java%2017145@-6.2468549,106.9713456" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Google Maps
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Lokasi Content -->
-
-      <!-- Begin Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-      <section class="section-light regular-section is-fullheight" id="tentang-pasangan">
-        <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear"> Tentang [Calon Mempelai Wanita] dan [Calon Mempelai [Pria]</h1>
-            
-
-          
-          <!-- IMAGES -->  
-        <div class=" tile">
-          <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">Foto 1</p>
-                <p class="subtitle-foto">
-                  Pertama kali saling kenal di <a href="https://google.com" target="_blank">Sebut Nama Tempat</a>
-                </p>
-              </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">
-                <p class="title-foto">
-                  Foto 2
-                </p>
-                <p class="subtitle-foto">
-                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
-                </p>   
-              </div>            
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
-              <div class="content">  
-                <p class="title-foto">
-                  Foto 3
-                </p>
-                <p class="subtitle-foto">
-                  Cerita cinta dimulai
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="space24px"></div>
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 4</p>
-              <p class="subtitle-foto">Pertemuan 2 keluarga</p>
+            <span>:</span>
+            <div class="time-box">
+                <span id="seconds" class="time-value">00</span>
+                <span class="time-label">Sek</span>
             </div>
-          </article>
         </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 5</p>
-              <p class="subtitle-foto">Lamaran</p>
-            </div>
-          </article>
+    </section>
+
+    <!-- 2-NJI SAHYPA (Giriş ýazgysy) -->
+    <section class="content-section">
+        <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="invitation-text">
+            Mähriban dostlar we dogan-gudalar!<br><br>
+            Sizi Kerim bilen Jahanyň durmuş toýy mynasybetli ýaýbaňlandyrylýan toý dabaramyza arzyly myhman bolmaga çagyrýarys.
         </div>
-        <div class="tile is-parent">              
-          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-            <div class="content">
-              <p class="title-foto">Foto 6</p>
-              <p class="subtitle-foto">Menikah</p>
-            </div>
-          </article>
-        </div>
-      </div>   
-          <!-- IMAGES -->
-          <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
+    </section>
 
-          </div>
-        </div>
-      </section>
-      <!-- End Tentang [Calon Mempelai Wanita] and [Calon Mempelai [Pria] -->
-
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
-            </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Merupakan suatu kehormatan dan kebahagiaan bagi kami
-                <br>
-                apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
-                memberikan doa restu.
-                <br>
-                <br>
-                Jika bisa hadir kami tunggu konfirmasinya, 
-                <br>
-                Informasi: Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.
-                <br>
-                <br>
-                Jika tidak memungkinkan untuk hadir di pernikahan kami,tidak mengapa,
-                <br> 
-                semoga bisa berjumpa di lain kesempatan
-                <br>
-                <br>
-                Stay safe & jaga kesehatan ya :)
-                </p>
-     
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20CPW,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari CPW
-              </a>
-              
-
-          
-              <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20CPP,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp; Kabari CPP
-              </a >
-              <div class="space40px"></div>
-
-              <div class="space40px"></div>
-              <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-              </div>
-              <div class="space40px"></div>
-              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram":" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPW">
-                  <i class="fab fa-instagram"></i> @instagramaccount
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/instagramaccount" target="_blank" alt="Instagram CPP">
-                  <i class="fab fa-instagram"></i> @instagramaccount
-                </a>
-              </p>
-
-            </div>
- 
-         </div>
-        </div>
-      </section>
-      <!-- End RSVP Content -->
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <div class="footer">
-      <div class="container">
-        <a href="https://github.com/daengdoang/simple-wedding-invitation" class="has-vertically-align">
-          <p class="has-vertically-align">2020-2025 &copy @daengdoang </p>
-        </a>
-        <a href="https://bulma.io" class="has-vertically-align">
-          <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma">
-        </a>
-        <a href="https://www.netlify.com">
-          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
-        </a>
-      </div>
-    </div>
-    <!-- End Footer -->
-
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menikah.js"></script>
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- YZA SANAMAYAN JAVASCRIPT KODY -->
     <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
+        const targetDate = new Date("October 17, 2026 18:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+                document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            } else {
+                document.querySelector(".countdown-container").innerHTML = "Toý güni geldi!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
     </script>
-  </body>
+</body>
 </html>
